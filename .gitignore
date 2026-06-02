@@ -8,3 +8,6 @@ public/media
 *.db
 *.sqlite
 *.sqlite3
+node_modules/
+.next/
+out/
