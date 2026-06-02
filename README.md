@@ -23,7 +23,7 @@ npm run dev
 Open the local URL shown by Next.js. The access PIN is:
 
 ```text
-1102
+****
 ```
 
 ## Generate From WhatsApp Export
