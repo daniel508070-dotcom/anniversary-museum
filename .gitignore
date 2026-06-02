@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+dist
+.env*
+data/private
+public/media
+*.db
+*.sqlite
+*.sqlite3
