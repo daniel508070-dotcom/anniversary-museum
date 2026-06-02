@@ -225,7 +225,7 @@ export function analyzeMessages(messagesInput: RawMessage[], sourceMode: Relatio
       { title: "The day we could not stop", value: mostActiveDay?.day ?? "Pending data", detail: `${mostActiveDay?.count ?? 0} messages in a single day.` },
       { title: "The month that overflowed", value: mostActiveMonth?.month ?? "Pending data", detail: `${mostActiveMonth?.count ?? 0} messages across one month together through a screen.` },
       { title: "The thread that stayed alive", value: `${streak.days} days`, detail: streak.start ? `${streak.start} through ${streak.end}.` : "Needs more archive data." },
-      { title: "Little keepsakes", value: String(mediaTotal), detail: "Photos, videos, stickers, GIFs, and audio detected." }
+      { title: "Little keepsakes", value: String(mediaTotal), detail: "Photos, videos, stickers, GIFs, and audio that helped frame the story." }
     ],
     evolution: monthRows.map((row) => ({
       month: row.month,

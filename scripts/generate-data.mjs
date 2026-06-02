@@ -422,7 +422,7 @@ function analyze(messages, systemMessages, chatPath) {
       { title: "The day we could not stop", value: maxDay?.day ?? "Pending data", detail: `${maxDay?.total ?? 0} messages in a single day.` },
       { title: "The month that overflowed", value: maxMonth?.month ?? "Pending data", detail: `${maxMonth?.total ?? 0} messages across one month together through a screen.` },
       { title: "The thread that stayed alive", value: `${streak.days} days`, detail: streak.start ? `${streak.start} through ${streak.end}.` : "Needs more archive data." },
-      { title: "Little keepsakes", value: String(mediaTotal), detail: "Photos, videos, stickers, GIFs, and audio detected from export placeholders." },
+      { title: "Little keepsakes", value: String(mediaTotal), detail: "Photos, videos, stickers, GIFs, and audio that helped frame the story." },
       { title: "The tenderest month", value: affectionateMonth?.[0] ?? "Pending data", detail: `${affectionateMonth?.[1] ?? 0} messages where affection rose to the surface.` }
     ],
     evolution: monthRows.map((row) => ({ month: row.month, messages: row.total, affection: affectionByMonth.get(row.month) ?? 0, emojis: emojiMonthly.get(row.month)?.total ?? 0, chapter: chapterForDate(`${row.month}-01T00:00:00`) })),

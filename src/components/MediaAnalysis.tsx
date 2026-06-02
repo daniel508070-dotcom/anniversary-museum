@@ -1,18 +1,18 @@
 import type { RelationshipData } from "@/types/relationship";
 
 const labels: Record<string, string> = {
-  photo: "Photo placeholders",
+  photo: "Photos",
   video: "Videos",
   sticker: "Stickers",
   gif: "GIFs",
   audio: "Audio"
 };
 const details: Record<string, string> = {
-  photo: "Counted from WhatsApp image placeholders in the exported text.",
-  video: "Counted from WhatsApp video placeholders.",
-  sticker: "Counted separately from saved photos.",
-  gif: "Counted from GIF placeholders.",
-  audio: "Includes audio and voice-note placeholders from the export."
+  photo: "Photos that framed little pieces of our history.",
+  video: "Moving moments that kept the day alive for a little longer.",
+  sticker: "Tiny reactions with big personality, sent when words needed a face.",
+  gif: "Little bursts of motion that made the conversation smile.",
+  audio: "Voice and sound kept close, like hearing the day breathe."
 };
 const visibleKinds = new Set(["photo", "video", "sticker", "gif", "audio"]);
 

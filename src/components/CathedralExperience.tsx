@@ -123,8 +123,8 @@ export function CathedralExperience({ data }: { data: RelationshipData }) {
           <p className="eyebrow">The little relics</p>
           <h2>Stickers, photos, audio, and all the things words could not hold</h2>
           <p>
-            The export cannot show every image here, but it still remembers when a moment
-            needed more than text.
+            Every photo, sound, sticker, and tiny moving thing became another way of
+            saying stay with me for a second longer.
           </p>
         </div>
         <MediaAnalysis data={data} />
