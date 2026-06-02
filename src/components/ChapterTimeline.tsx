@@ -2,6 +2,8 @@ import type { CSSProperties } from "react";
 import type { Chapter, Milestone } from "@/types/relationship";
 
 export function ChapterTimeline({ chapters, milestones }: { chapters: Chapter[]; milestones: Milestone[] }) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   return (
     <div className="timeline">
       {chapters.map((chapter, index) => {
@@ -9,7 +11,7 @@ export function ChapterTimeline({ chapters, milestones }: { chapters: Chapter[];
         return (
         <article className={`timeline__chapter timeline__chapter--${chapter.id}`} key={chapter.id} style={{ "--chapter-color": chapter.color } as CSSProperties}>
           <div className="timeline__media" aria-hidden="true">
-            <img src={`/chapters/${number}.JPG`} alt="" />
+            <img src={`${basePath}/chapters/${number}.JPG`} alt="" />
           </div>
           <div className="timeline__content">
             <div className="timeline__index">{number}</div>
